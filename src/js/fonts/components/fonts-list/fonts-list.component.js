@@ -21,7 +21,7 @@ class FontsListCtrl {
       listConfig: '='
     },
     controller: FontsListCtrl,
-    templateUrl: 'components/fonts-list/fonts-list.html'
+    templateUrl: 'fonts/components/fonts-list/fonts-list.html'
   };
    
   export default FontsList;

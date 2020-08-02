@@ -61,6 +61,7 @@ gulp.task('views', function() {
 gulp.task('sass', function() {
   return gulp.src('src/commons/bootstrap.scss')
       .pipe(sass().on('error', sass.logError))
+      .pipe(rename('style.css'))
       .pipe(gulp.dest('build/'));
 });
 

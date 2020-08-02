@@ -1,9 +1,5 @@
 
-<ul>
-    <li ng-repeat="font in $ctrl.fonts track by $index">
-        <font-preview font="font"></font-preview>
-    </li>
-</ul>
+<font-preview font="font" ng-repeat="font in $ctrl.fonts track by $index"></font-preview>
 
 <div ng-show="!$ctrl.fontsLoaded">
     Loading fonts...
@@ -12,3 +8,4 @@
 <div class="post-preview" ng-show="$ctrl.fontsLoaded && !$ctrl.fonts.length">
     No tags are here... yet.
 </div>
+

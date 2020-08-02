@@ -3,9 +3,6 @@ class FontPreviewCtrl {
   
     constructor($scope) {
       'ngInject';
-
-      $scope.font = this.font;
-      console.log(this.font);
     }
 
   }
@@ -15,7 +12,7 @@ class FontPreviewCtrl {
       font: '='
     },
     controller: FontPreviewCtrl,
-    templateUrl: 'components/font-preview/font-preview.html'
+    templateUrl: 'fonts/components/font-preview/font-preview.html'
   };
    
   export default FontPreview;
