@@ -6,13 +6,13 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-left: 25px;
-    padding-top: 15px;
 
     &__left-bar {
       width: calc(100% - #{$right-bar-width});
       display: flex;
       flex-direction: column;
+      padding-left: 25px;
+      padding-top: 15px;
     }
 
     &__right-bar {
