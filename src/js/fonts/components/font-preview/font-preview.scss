@@ -1,8 +1,36 @@
 
-md-card {
+.md-card {
     width: 200px;
     height: 170px;
     float: left;
     border-radius: 5px;
     background-color: white;
+    overflow: hidden;
+
+    &__prev {
+        height: 110px;
+        font-size: 78px;
+        overflow: hidden;
+        border-bottom: 1px solid $border-font-block;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        padding: 10px 10px;
+        background-color: $bg-font-prev-color;
+    }
+
+    &__headline {
+        font-size: 15px;
+        font-weight: 550;
+        padding-bottom: 2px;
+    }
+
+    &__subhead {
+        font-size: 16px;
+        color: #858482;
+        font-weight: 100;
+    }
 }
+

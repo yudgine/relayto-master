@@ -1,5 +1,9 @@
 
-<font-preview font="font" ng-repeat="font in $ctrl.fonts track by $index"></font-preview>
+<div class="font-list">
+    <font-preview font="font" 
+              ng-repeat="font in $ctrl.fonts track by $index"
+              ng-if="$index < 12"></font-preview>
+</div>
 
 <div ng-show="!$ctrl.fontsLoaded">
     Loading fonts...

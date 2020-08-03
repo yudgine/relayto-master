@@ -4,8 +4,7 @@ export default class Fonts {
   
       this._AppConstants = AppConstants;
       this._$http = $http;
-      this._$q = $q;
-  
+      this._$q = $q;  
   
     }
   
