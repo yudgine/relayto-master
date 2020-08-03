@@ -1,0 +1,13 @@
+.top-bar {
+    padding-left: 7px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    &__search {
+        width: 202px;
+        background-image: url('https://image.flaticon.com/icons/png/128/2089/2089805.png');
+        background-repeat: no-repeat;
+        background-position: 8px 9px;
+        background-size: 18px 18px;
+    }
+}

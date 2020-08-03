@@ -3,23 +3,25 @@ class FontPreviewCtrl {
     "ngInject";
   }
 
-  importLink(font) {
-    if (!font) return;
+  importFontStyle(font) {
       const fname = font.family.split(" ").join("+");
       const css = `@import url('https://fonts.googleapis.com/css?family=${fname}');`;
+      this.appendStyleToHeader(css);
+  }
 
-      const head = document.head || document.getElementsByTagName("head")[0];
-      const  style = document.createElement("style");
+  appendStyleToHeader(css) {
+    const head = document.head || document.getElementsByTagName("head")[0];
+    const  style = document.createElement("style");
 
-      head.appendChild(style);
+    head.appendChild(style);
 
-      style.type = "text/css";
-      if (style.styleSheet) {
-        // This is required for IE8 and below.
-        style.styleSheet.cssText = css;
-      } else {
-        style.appendChild(document.createTextNode(css));
-      }
+    style.type = "text/css";
+    if (style.styleSheet) {
+      // This is required for IE8 and below.
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
   }
 
   fontStyle(font) {
